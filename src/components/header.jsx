@@ -2,7 +2,7 @@ import { Row, Col } from "antd"
 
 export const Header = (props) => {
   return (
-    <header id='header'>
+    <header id='header' style={{ width: '110%' }}>
       <div className='intro'>
         <div className='overlay'>
           <div className='container'>
