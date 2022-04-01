@@ -1,4 +1,4 @@
-import { Image } from "./image";
+import { Row, Col } from 'antd'
 
 export const Gallery = (props) => {
   return (
@@ -10,10 +10,11 @@ export const Gallery = (props) => {
             Combo 99k cực sốc.
           </p>
         </div>
-        <div className='row'>
 
-          <img src="img/bg7.jpg" alt="img" style={{ width: '100%', height: 'auto' }} />
-        </div>
+        <Row justify='center'>
+          <Col><img src="img/bg3.jpg" alt="img" style={{ width: '100%', height: 'auto' }} /></Col>
+        </Row>
+
       </div>
     </div>
   )
