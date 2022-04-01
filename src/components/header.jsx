@@ -34,7 +34,7 @@ export const Header = (props) => {
                 </div>
                 <p style={{ fontSize: '24px', fontWeight: 'bold' }}>Sốc - Chỉ <span style={{ color: 'red', fontSize: '30px' }}>119k</span> 1 combo 3 món:  <br /> </p>
 
-                <div style={{ fontSize: '24px', fontWeight: 'bold', color: 'white' }}>
+                <div style={{ fontSize: '22px', fontWeight: 'bold', color: 'white' }}>
                   <span className="span-content">Giá đỡ điện thoại  </span>
                   <span className="span-content">Dây sạc ba đầu  </span>
                   <span className="span-content">Củ sạc nhanh</span>
