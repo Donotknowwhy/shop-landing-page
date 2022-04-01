@@ -6,6 +6,7 @@ import { Gallery } from "./components/gallery";
 import { Header } from "./components/header";
 import JsonData from "./data/data.json";
 import axios from "axios";
+import "./assets/scss/index.scss"
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
