@@ -126,3 +126,9 @@
   font-weight: 300;
   padding-right: 8px;
 }
+
+@media screen and (max-width: 400px) {
+  #header {
+    width: 110%;
+  }
+}
