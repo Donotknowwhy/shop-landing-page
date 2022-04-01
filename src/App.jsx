@@ -1,16 +1,11 @@
-import { useState, useEffect } from "react";
-import { Navigation } from "./components/navigation";
-import { Header } from "./components/header";
-import { Features } from "./components/features";
-import { About } from "./components/about";
-import { Services } from "./components/services";
-import { Gallery } from "./components/gallery";
-import { Testimonials } from "./components/testimonials";
-import { Team } from "./components/Team";
-import { Contact } from "./components/contact";
-import JsonData from "./data/data.json";
+import { useEffect, useState } from "react";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
+import { Contact } from "./components/contact";
+import { Gallery } from "./components/gallery";
+import { Header } from "./components/header";
+import JsonData from "./data/data.json";
+import axios from "axios";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -23,15 +18,23 @@ const App = () => {
     setLandingPageData(JsonData);
   }, []);
 
+  // useEffect(() => {
+  //   const getData = async () => {
+  //     const res = await axios.get(`https://api.emailjs.com/api/v1.1/history`, {
+  //       params: {
+  //         user_id: "DpWVZFAGGqTb_5sIi",
+  //         accessToken: "ytHg7XQNVeriFw74uM5_L"
+  //       }
+  //     })
+  //     console.log(res.data)
+  //   }
+  //   getData()
+  // }, [])
+
   return (
     <div>
-      {/* <Navigation /> */}
       <Header data={landingPageData.Header} />
-      {/* <Features data={landingPageData.Features} /> */}
-      {/* <About data={landingPageData.About} /> */}
-      {/* <Services data={landingPageData.Services} /> */}
       <Gallery data={landingPageData.Gallery} />
-      {/* <Testimonials data={landingPageData.Testimonials} /> */}
       {/* <Team data={landingPageData.Team} /> */}
       <Contact data={landingPageData.Contact} />
     </div>

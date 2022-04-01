@@ -7,12 +7,12 @@ export const Gallery = (props) => {
         <div className='section-title'>
           <h2>Sản phẩm</h2>
           <p>
-            Combo 99k cực sốc.
+            Combo 129k cực sốc.
           </p>
         </div>
 
         <Row justify='center'>
-          <Col><img src="img/bg3.jpg" alt="img" style={{ width: '100%', height: 'auto' }} /></Col>
+          <Col><img src="img/bgaa.jpg" alt="img" style={{ width: '100%', height: 'auto' }} /></Col>
         </Row>
 
       </div>
