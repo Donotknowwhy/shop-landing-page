@@ -58,7 +58,7 @@ export const Gallery = (props) => {
     <div id='portfolio' className='text-center'>
       <div className='container'>
         <div className='section-title'>
-          <h2 class="animate-charcter" style={{ fontSize: '40px' }}>Sản phẩm</h2>
+          <h2 className="animate-charcter" style={{ fontSize: '40px' }}>Sản phẩm</h2>
           <p><span style={{ color: "red" }}>SALE 50%</span> :1 Combo 3 món <span style={{ color: "red", fontSize: '30px' }}>#119k</span></p>
           <p><span style={{ color: "red" }}>SALE 50%</span> :2 Combo 6 món <span style={{ color: "red", fontSize: '30px' }}>
             #249k
@@ -76,7 +76,7 @@ export const Gallery = (props) => {
 
 
 
-        <h2 class="animate-charcter" style={{ fontSize: '40px' }}>CAM KẾT</h2>
+        <h2 className="animate-charcter" style={{ fontSize: '40px' }}>CAM KẾT</h2>
         <div className='about-text'>
 
           <Row justify='center'>
@@ -96,7 +96,7 @@ export const Gallery = (props) => {
 
         <br />
 
-        <h2 class="animate-charcter" style={{ fontSize: '40px' }}>ĐÁNH GIÁ</h2>
+        <h2 className="animate-charcter" style={{ fontSize: '40px' }}>ĐÁNH GIÁ</h2>
 
         <List
           className="comment-list"

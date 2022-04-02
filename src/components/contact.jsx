@@ -67,7 +67,7 @@ export const Contact = (props) => {
           duration: 2,
         }
       )
-    }, 5000)
+    }, 6000)
   }, [])
 
   return (
@@ -80,7 +80,7 @@ export const Contact = (props) => {
               <div className='section-title'>
                 <h2>Đặt hàng</h2>
                 <p>
-                  Hãy điền vào những thông tin bên dưới. Chúng tôi sẽ sớm liên hệ với bạn
+                  Hãy điền vào những thông tin bên dưới. Chúng tôi sẽ sớm liên hệ để chốt đơn với bạn.
                 </p>
               </div>
               <form name='sentMessage' validate onSubmit={handleSubmit}>

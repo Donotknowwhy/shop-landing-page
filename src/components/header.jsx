@@ -10,11 +10,11 @@ export const Header = (props) => {
           <div className='container'>
             <div className='row'>
               <div className='col-md-8 col-md-offset-2 intro-text'>
-                <div class="container-title">
-                  <h2 class="title">
-                    <span class="title-word title-word-1">Phụ </span>
-                    <span class="title-word title-word-2">Kiện </span>
-                    <span class="title-word title-word-3">99</span>
+                <div className="container-title">
+                  <h2 className="title">
+                    <span className="title-word title-word-1">Phụ </span>
+                    <span className="title-word title-word-2">Kiện </span>
+                    <span className="title-word title-word-3">99</span>
                   </h2>
                 </div>
                 <a
@@ -25,10 +25,10 @@ export const Header = (props) => {
                 </a>
                 <br />
                 <br />
-                <div class="container-sale">
-                  <div class="row">
-                    <div class="col-md-12 text-center">
-                      <h3 class="animate-charcter"> Giảm giá 50%</h3>
+                <div className="container-sale">
+                  <div className="row">
+                    <div className="col-md-12 text-center">
+                      <h3 className="animate-charcter"> Giảm giá 50%</h3>
                     </div>
                   </div>
                 </div>
