@@ -36,7 +36,7 @@ const data = [
     avatar: <img src='img/nam2.webp' alt='img' />,
     content: (
       <p style={{ textAlign: 'left' }}>
-        Dùng khá ổn, mình sẽ giới thiếu thêm cho bạn bè về sản phẩm này.
+        Nên mua combo #2 nhé mọi người, rất hài lòng về mức giá.
       </p>
     ),
     rate: 5
@@ -46,7 +46,7 @@ const data = [
     avatar: <img src='img/nu1.webp' alt='img' />,
     content: (
       <p style={{ textAlign: 'left' }}>
-        Dùng khá ổn, mình sẽ giới thiếu thêm cho bạn bè về sản phẩm này.
+        Gía rẻ nhưng dùng rất đáng tiền.
       </p>
     ),
     rate: 4.5
