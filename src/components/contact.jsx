@@ -64,7 +64,7 @@ export const Contact = (props) => {
           message: <p>{data[Math.floor(Math.random() * data.length)]}</p>,
           description: "Vừa đặt hàng thành công",
           placement: 'topLeft',
-          duration: 2,
+          duration: 3,
         }
       )
     }, 10000)
