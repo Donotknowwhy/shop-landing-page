@@ -1,6 +1,7 @@
 import { Button, Form, Input, notification } from 'antd';
 import emailjs from 'emailjs-com';
 import { useRef, useState } from 'react';
+import { useEffect } from 'react';
 
 const initialState = {
   name: '',
@@ -9,6 +10,9 @@ const initialState = {
   content: '',
   email: ""
 }
+
+const data = ['Nguyễn Hồng Thái', 'Đào Quỳnh Như', 'Trần Diệu Linh', 'Nguyễn Đức Hùng', 'Trần Văn Bách', 'Nguyễn Đình Long', 'Lê Thị Quyên', 'Đào Văn Nam', 'Lê Trọng Phú']
+
 export const Contact = (props) => {
   const [{ name, email, message }, setState] = useState(initialState)
   const form = useRef();
@@ -52,6 +56,19 @@ export const Contact = (props) => {
       )
   }
 
+
+  useEffect(() => {
+    setInterval(() => {
+      notification.success(
+        {
+          message: <p>{data[Math.floor(Math.random() * data.length)]}</p>,
+          description: "Vừa đặt hàng thành công",
+          placement: 'topLeft',
+          duration: 2,
+        }
+      )
+    }, 10000)
+  }, [])
 
   return (
     <div>

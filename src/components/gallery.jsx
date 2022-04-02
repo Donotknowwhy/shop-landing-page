@@ -1,4 +1,27 @@
-import { Row, Col } from 'antd'
+import { Row, Col, List, Comment, Rate } from 'antd'
+
+const data = [
+  {
+    author: 'Nguyễn Văn Cường',
+    avatar: <img src='img/avt-boy.webp' alt='img' />,
+    content: (
+      <p style={{ textAlign: 'left' }}>
+        Sản phẩm chất lượng cao, rất hài lòng.
+      </p>
+    ),
+    rate: 4.5
+  },
+  {
+    author: 'Hoàng Mỹ Uyên',
+    avatar: <img src='img/avt-girl.jpg' alt='img' />,
+    content: (
+      <p style={{ textAlign: 'left' }}>
+        Dùng khá ổn, mình sẽ giới thiếu thêm cho bạn bè về sản phẩm này.
+      </p>
+    ),
+    rate: 5
+  },
+];
 
 export const Gallery = (props) => {
   return (
@@ -11,13 +34,13 @@ export const Gallery = (props) => {
             #249k
           </span> <span style={{ color: '#ee4d2d' }}>Miễn phí vận chuyển</span> </p>
           <p className='p-content'>
-            Giá đỡ điện thoại thông minh xoay 360 độ tuỳ chỉnh cao thấp là vật dụng không thể thiếu cho trẻ học online,người lớn xem phim đọc báo làm việc.
+            <span style={{ fontSize: '26px' }}>Giá đỡ điện thoại thông minh</span> xoay 360 độ tuỳ chỉnh cao thấp là vật dụng không thể thiếu cho trẻ học online,người lớn xem phim đọc báo làm việc.
           </p>
           <p className='p-content'>
-            Dây sạc 3 Cổng tye C, lighting,Usb sạc được mọi loại điện thoại.
+            <span style={{ fontSize: '26px' }}>Dây sạc 3 Cổng</span> type C, lighting,Usb sạc được mọi loại điện thoại.
           </p>
           <p className='p-content'>
-            Củ sạc nhanh 30W sạc siêu nhanh an toàn cho pin điện thoại.
+            <span style={{ fontSize: '26px' }}>Củ sạc nhanh 30W</span> sạc siêu nhanh an toàn cho pin điện thoại.
           </p>
         </div>
 
@@ -41,6 +64,27 @@ export const Gallery = (props) => {
           <Col><img src="img/bgaa.jpg" alt="img" style={{ width: '100%', height: 'auto' }} /></Col>
         </Row>
 
+        <br />
+
+        <h2 class="animate-charcter" style={{ fontSize: '40px' }}>ĐÁNH GIÁ</h2>
+
+        <List
+          className="comment-list"
+          header={`${data.length} đánh giá`}
+          itemLayout="horizontal"
+          dataSource={data}
+          renderItem={item => (
+            <li>
+              <Comment
+                actions={item.actions}
+                author={<span>{item.author}    <Rate allowHalf disabled defaultValue={item.rate} /></span>}
+                avatar={item.avatar}
+                content={item.content}
+                datetime={item.datetime}
+              />
+            </li>
+          )}
+        />
       </div>
     </div>
   )
