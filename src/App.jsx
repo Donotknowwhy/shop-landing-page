@@ -5,7 +5,7 @@ import { Contact } from "./components/contact";
 import { Gallery } from "./components/gallery";
 import { Header } from "./components/header";
 import JsonData from "./data/data.json";
-import axios from "axios";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import "./assets/scss/index.scss"
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
@@ -19,25 +19,25 @@ const App = () => {
     setLandingPageData(JsonData);
   }, []);
 
-  // useEffect(() => {
-  //   const getData = async () => {
-  //     const res = await axios.get(`https://api.emailjs.com/api/v1.1/history`, {
-  //       params: {
-  //         user_id: "DpWVZFAGGqTb_5sIi",
-  //         accessToken: "ytHg7XQNVeriFw74uM5_L"
-  //       }
-  //     })
-  //     console.log(res.data)
-  //   }
-  //   getData()
-  // }, [])
 
   return (
     <div>
-      <Header data={landingPageData.Header} />
-      <Gallery data={landingPageData.Gallery} />
-      {/* <Team data={landingPageData.Team} /> */}
-      <Contact data={landingPageData.Contact} />
+      <HelmetProvider>
+        <Helmet prioritizeSeoTags>
+          <title>Phụ kiện 99</title>
+          <meta name="phukien99" />
+          <meta
+            id="phukien99"
+            name="phukien99"
+            content="phukien99, vercel"
+          />
+          <meta property="og:title" content="phukien99" />
+        </Helmet>
+        <Header data={landingPageData.Header} />
+        <Gallery data={landingPageData.Gallery} />
+        {/* <Team data={landingPageData.Team} /> */}
+        <Contact data={landingPageData.Contact} />
+      </HelmetProvider>
     </div>
   );
 };
