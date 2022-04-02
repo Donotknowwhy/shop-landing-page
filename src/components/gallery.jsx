@@ -21,6 +21,36 @@ const data = [
     ),
     rate: 5
   },
+  {
+    author: 'Nguyễn Đình Trọng',
+    avatar: <img src='img/nam1.jpg' alt='img' />,
+    content: (
+      <p style={{ textAlign: 'left' }}>
+        Sản phẩm tốt.
+      </p>
+    ),
+    rate: 4.5
+  },
+  {
+    author: 'Bùi Văn Nguyên',
+    avatar: <img src='img/nam2.webp' alt='img' />,
+    content: (
+      <p style={{ textAlign: 'left' }}>
+        Dùng khá ổn, mình sẽ giới thiếu thêm cho bạn bè về sản phẩm này.
+      </p>
+    ),
+    rate: 5
+  },
+  {
+    author: 'Trần Thanh Thảo',
+    avatar: <img src='img/nu1.webp' alt='img' />,
+    content: (
+      <p style={{ textAlign: 'left' }}>
+        Dùng khá ổn, mình sẽ giới thiếu thêm cho bạn bè về sản phẩm này.
+      </p>
+    ),
+    rate: 4.5
+  },
 ];
 
 export const Gallery = (props) => {

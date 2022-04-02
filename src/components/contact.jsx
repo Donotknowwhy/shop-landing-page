@@ -64,10 +64,10 @@ export const Contact = (props) => {
           message: <p>{data[Math.floor(Math.random() * data.length)]}</p>,
           description: "Vừa đặt hàng thành công",
           placement: 'topLeft',
-          duration: 3,
+          duration: 2,
         }
       )
-    }, 10000)
+    }, 5000)
   }, [])
 
   return (
