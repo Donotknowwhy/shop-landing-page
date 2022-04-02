@@ -158,8 +158,8 @@ export const Contact = (props) => {
         <div className='container text-center'>
           <p>
             &copy; Landing Page Design By{' '}
-            <a href='#' rel='nofollow'>
-              kiencx999
+            <a href='https://join.skype.com/invite/wPvzBYpDn8n9' rel='nofollow' target='blank'>
+              Kiencx999
             </a>
           </p>
         </div>
