@@ -9,7 +9,7 @@ export const Header = (props) => {
         <div className='overlay'>
           <div className='container'>
             <div className='row'>
-              <div className='col-md-8 col-md-offset-2 intro-text'>
+              <div className='col-md-12  intro-text'>
                 <div className="container-title">
                   <h2 className="title">
                     <span className="title-word title-word-1">Phụ </span>

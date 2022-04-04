@@ -7,6 +7,7 @@ import { Header } from "./components/header";
 import JsonData from "./data/data.json";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import "./assets/scss/index.scss"
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,

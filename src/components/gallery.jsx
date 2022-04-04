@@ -1,4 +1,5 @@
 import { Row, Col, List, Comment, Rate } from 'antd'
+import { Carousel } from 'react-responsive-carousel';
 
 const data = [
   {
@@ -75,6 +76,28 @@ export const Gallery = (props) => {
         </div>
 
 
+        <div>
+          <Carousel>
+            <div>
+              <img src="img/a1.jpg" alt="img" />
+            </div>
+            <div>
+              <img src="img/a2.jpg" alt="img" />
+            </div>
+            <div>
+              <img src="img/a3.jpg" alt="img" />
+            </div>
+            <div>
+              <img src="img/a4.jpg" alt="img" />
+            </div>
+            <div>
+              <img src="img/a5.jpg" alt="img" />
+            </div>
+            <div>
+              <img src="img/a6.jpg" alt="img" />
+            </div>
+          </Carousel>
+        </div>
 
         <h2 className="animate-charcter" style={{ fontSize: '40px' }}>CAM KẾT</h2>
         <div className='about-text'>
