@@ -60,8 +60,8 @@ export const Gallery = (props) => {
       <div className='container'>
         <div className='section-title'>
           <h2 className="animate-charcter" style={{ fontSize: '40px' }}>Sản phẩm</h2>
-          <p><span style={{ color: "red" }}>SALE 50%</span> :1 Combo 3 món <span style={{ color: "red", fontSize: '30px' }}>#119k</span></p>
-          <p><span style={{ color: "red" }}>SALE 50%</span> :2 Combo 6 món <span style={{ color: "red", fontSize: '30px' }}>
+          <p><span style={{ color: "red" }}>SALE 60%</span> :1 Combo 3 món <span style={{ color: "red", fontSize: '30px' }}>#119k</span></p>
+          <p><span style={{ color: "red" }}>SALE 60%</span> :2 Combo 6 món <span style={{ color: "red", fontSize: '30px' }}>
             #249k
           </span> <span style={{ color: '#ee4d2d' }}>Miễn phí vận chuyển</span> </p>
           <p className='p-content'>
