@@ -25,7 +25,7 @@ export const Header = (props) => {
                     </div>
                   </div>
                 </div>
-                <p style={{ fontSize: '24px', fontWeight: 'bold' }}><span style={{ textDecoration: 'line-through', fontSize: '30px' }}>299k</span> - Chỉ <span style={{ color: 'red', fontSize: '30px' }}>119k</span> 1 combo 3 món:  <br /> </p>
+                <p style={{ fontSize: '24px', fontWeight: 'bold' }}><span style={{ textDecoration: 'line-through', fontSize: '30px' }}>299k</span> - Chỉ <span style={{ color: '#e74c3c', fontSize: '30px' }}>119k</span> 1 combo 3 món:  <br /> </p>
 
                 <div style={{ fontSize: '22px', fontWeight: 'bold', color: 'white' }}>
                   <span>Giá đỡ điện thoại  </span>
@@ -36,7 +36,7 @@ export const Header = (props) => {
                 <br />
                 <a
                   href='#contact'
-                  className='btn btn-custom btn-lg page-scroll' style={{ fontSize: '20px', background: 'red' }}
+                  className='btn btn-custom btn-lg page-scroll' style={{ fontSize: '20px', background: '#e74c3c' }}
                 >
                   Mua luôn
                 </a>

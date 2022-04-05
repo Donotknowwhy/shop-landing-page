@@ -143,7 +143,7 @@ export const Contact = (props) => {
                 </div>
                 <div id='success'></div>
                 <div className='form-group' style={{ textAlign: 'center' }}>
-                  <button type='submit' className='btn btn-custom btn-danger btn-lg' style={{ fontSize: '20px', background: 'red' }}>
+                  <button type='submit' className='btn btn-custom btn-danger btn-lg' style={{ fontSize: '20px', background: '#e74c3c' }}>
                     Mua ngay
                   </button>
                 </div>
