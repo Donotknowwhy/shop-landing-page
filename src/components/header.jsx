@@ -25,7 +25,7 @@ export const Header = (props) => {
                     </div>
                   </div>
                 </div>
-                <p style={{ fontSize: '24px', fontWeight: 'bold' }}><span style={{ textDecoration: 'line-through', fontSize: '30px' }}>199k</span> - Chỉ <span style={{ color: '#e74c3c', fontSize: '30px' }}>99k</span> 1 combo 3 món:  <br /> </p>
+                <p style={{ fontSize: '24px', fontWeight: 'bold' }}><span style={{ textDecoration: 'line-through', fontSize: '30px' }}>199k</span> - Chỉ <span style={{ color: 'red', fontSize: '40px' }}>99k</span> 1 combo 3 món:  <br /> </p>
 
                 <div style={{ fontSize: '22px', fontWeight: 'bold', color: 'white' }}>
                   <span>Giá đỡ điện thoại  </span>
