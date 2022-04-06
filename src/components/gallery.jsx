@@ -60,9 +60,9 @@ export const Gallery = (props) => {
       <div className='container'>
         <div className='section-title'>
           <h2 className="animate-charcter" style={{ fontSize: '40px' }}>Sản phẩm</h2>
-          <p><span style={{ color: "red" }}>SALE 60%</span> :1 Combo 3 món <span style={{ color: "#e74c3c", fontSize: '30px' }}>#119k</span></p>
-          <p><span style={{ color: "red" }}>SALE 60%</span> :2 Combo 6 món <span style={{ color: "#e74c3c", fontSize: '30px' }}>
-            #249k
+          <p><span style={{ color: "red" }}>SALE 50%</span> :1 Combo 3 món <span style={{ color: "#e74c3c", fontSize: '30px' }}>#99k</span></p>
+          <p><span style={{ color: "red" }}>SALE 50%</span> :2 Combo 6 món <span style={{ color: "#e74c3c", fontSize: '30px' }}>
+            #199k
           </span> <span style={{ color: '#ee4d2d' }}>Miễn phí vận chuyển</span> </p>
           <p className='p-content'>
             <span style={{ fontSize: '26px' }}>Giá đỡ điện thoại thông minh</span> xoay 360 độ tuỳ chỉnh cao thấp là vật dụng không thể thiếu cho trẻ học online,người lớn xem phim đọc báo làm việc.
@@ -123,7 +123,7 @@ export const Gallery = (props) => {
 
         <List
           className="comment-list"
-          header={<p style={{fontSize:'20px'}}>{data.length} đánh giá  ǀ  1000+ đã bán</p>}
+          header={<p style={{ fontSize: '20px' }}>{data.length} đánh giá  ǀ  1000+ đã bán</p>}
           itemLayout="horizontal"
           dataSource={data}
           renderItem={item => (

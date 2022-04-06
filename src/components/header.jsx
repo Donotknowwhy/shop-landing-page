@@ -21,11 +21,11 @@ export const Header = (props) => {
                 <div className="container-sale">
                   <div className="row">
                     <div className="col-md-12 text-center">
-                      <h3 className="animate-charcter"> Giảm giá 60%</h3>
+                      <h3 className="animate-charcter"> Giảm giá 50%</h3>
                     </div>
                   </div>
                 </div>
-                <p style={{ fontSize: '24px', fontWeight: 'bold' }}><span style={{ textDecoration: 'line-through', fontSize: '30px' }}>299k</span> - Chỉ <span style={{ color: '#e74c3c', fontSize: '30px' }}>119k</span> 1 combo 3 món:  <br /> </p>
+                <p style={{ fontSize: '24px', fontWeight: 'bold' }}><span style={{ textDecoration: 'line-through', fontSize: '30px' }}>199k</span> - Chỉ <span style={{ color: '#e74c3c', fontSize: '30px' }}>99k</span> 1 combo 3 món:  <br /> </p>
 
                 <div style={{ fontSize: '22px', fontWeight: 'bold', color: 'white' }}>
                   <span>Giá đỡ điện thoại  </span>
