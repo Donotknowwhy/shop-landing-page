@@ -39,7 +39,7 @@ const App = () => {
         <Gallery data={landingPageData.Gallery} />
         {/* <Team data={landingPageData.Team} /> */}
         <Contact data={landingPageData.Contact} />
-        <Affix offsetBottom={20} style={{ position: 'fixed', right: '50px' }} >
+        <Affix offsetBottom={20} style={{ position: 'fixed', right: '10px' }} >
           <a
             href='#contact'
             className="button"
