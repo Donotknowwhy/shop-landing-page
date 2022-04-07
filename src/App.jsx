@@ -1,13 +1,14 @@
+import { Affix } from 'antd';
 import { useEffect, useState } from "react";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
+import "./assets/scss/index.scss";
 import { Contact } from "./components/contact";
 import { Gallery } from "./components/gallery";
 import { Header } from "./components/header";
 import JsonData from "./data/data.json";
-import { Helmet, HelmetProvider } from 'react-helmet-async';
-import "./assets/scss/index.scss"
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -38,6 +39,15 @@ const App = () => {
         <Gallery data={landingPageData.Gallery} />
         {/* <Team data={landingPageData.Team} /> */}
         <Contact data={landingPageData.Contact} />
+        <Affix offsetBottom={20} style={{ position: 'fixed', right: '50px' }} >
+          <a
+            href='#contact'
+            className="button"
+            style={{ fontSize: '25px', padding: '15px' }}
+          >
+            ĐẶT HÀNG NGAY
+          </a>
+        </Affix>
       </HelmetProvider>
     </div>
   );
