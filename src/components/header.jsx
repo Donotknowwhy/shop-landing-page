@@ -36,9 +36,10 @@ export const Header = (props) => {
                 <br />
                 <a
                   href='#contact'
-                  className='btn btn-custom btn-lg page-scroll' style={{ fontSize: '20px', background: '#e74c3c' }}
+                  className="button"
+                  style={{ fontSize: '30px', padding: '15px' }}
                 >
-                  Mua luôn
+                  ĐẶT HÀNG NGAY
                 </a>
 
                 <div style={{ textAlign: 'center' }}>
